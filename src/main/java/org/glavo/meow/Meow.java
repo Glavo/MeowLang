@@ -28,10 +28,29 @@ public final class Meow {
     public static final boolean DEBUG = "true".equals(System.getProperty("meow.debug"));
 
     private static final Set<String> MEOW = Set.of(
-            "meow", "miaou", "miao", "nyan",
-            "にゃん", "야옹", "喵", "喵呜",
-            "мяу", "miyav", "miau", "miauw", "μιάου", "mjau", "nyávog", "म्याऊं", "meong", "mjá", "meo meo",
-            "mjäu", "mjav", "мјау", "mjal", "მიაუ", "myau", "ngiyavuma", "ማው", "maw"
+            "喵", "喵呜", // zh_CN
+            "にゃん", "にゃ", "nya", "nyan", // ja_JP
+            "야옹", // ko_KR
+            "мяу", "мјау", // ru_RU
+            "miyav", // tr_TR
+            "miau", // de_DE
+            "miaou", // fr_FR
+            "miauw", // nl_NL
+            "μιάου", // el_GR
+            "mjau", "mjäu", // sv_SE
+            "nyávog", // hu_HU
+            "म्याऊं", // hi_IN
+            "meo meo", // vi_VN
+            "mjá", // is_IS
+            "mjav", // no_NO
+            "mjal", // sq_AL
+            "მიაუ", // ka_GE
+            "myau", // lv_LV
+            "ngiyavuma", // zu_ZA
+            "ማው", // am_ET
+            "meow", "maw", // en_US
+            "meong", // fi_FI
+            "miao" // it_IT
     );
 
     public static Meow of(XWPFRun term) {
